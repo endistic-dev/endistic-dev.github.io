@@ -15,81 +15,9 @@
     SkyBuilder more user-intuitive.
   </marquee>
 
-  <h1 style="text-align:center; font-size:80px;">
-    SkyBuilder
-  </h1>
-  <h3 style="text-align:center; font-size:40px">
-    Developed by Endistic.
-  </h3>
-
   <div class="site">
     <div class="gear_container">
-      <div class="base_stats" align="left">
-        <button id="levels_button" class="js_dropdown" onclick="toggleLevels()">Hide Levels ⇑</button>
-        <div id="levels_toggle">
-          <br>
-          SkyBlock XP (e.g 23510)
-          <input type="text" id="sbxp" class="refresher"></input>
-          Skill Average
-          <input type="text" id="skavg" class="refresher"></input>
-          Combat Level
-          <input type="text" id="combatlv" class="refresher"></input>
-        </div>
-
-        <br>
-        <br>
-        <button class="js_dropdown" onclick="toggleTalismans()">Hide Talismans ⇑</button>
-        <div id="talismans_toggle">
-          <br>
-          Magical Power
-          <input type="text" id="magical_power" class="refresher"></input>
-          Talisman Powers
-          <datalist id="powers">
-            <option value="None">None</option>
-            <option value="Silky">Silky</option>
-            <option value="Scorching">Scorching</option>
-            <option value="Slender">Slender</option>
-            <option value="Strong">Strong</option>
-            <option value="Bizarre">Bizarre</option>
-            <option value="Demonic">Demonic</option>
-            <option value="Hurtful">Hurtful</option>
-            <option value="Pleasant">Pleasant</option>
-            <option value="Adept">Adept</option>
-            <option value="Bloody">Bloody</option>
-            <option value="Forceful">Forceful</option>
-            <option value="Itchy">Itchy</option>
-            <option value="Mythical">Mythical</option>
-            <option value="Shaded">Shaded</option>
-            <option value="Sighted">Sighted</option>
-            <option value="Silky">Silky</option>
-            <option value="Sweet">Sweet</option>
-          </datalist>
-          <input list="powers" id="talisman_power" class="refresher" list="powers" type="text">
-          <br>
-          <b>WIP</b> Stat to Invest Tuning Points In:
-          <input id="tuning_points" class="refreshers" type="text">
-          </select>
-        </div>
-      </div>
       <br>
-      <button class="js_dropdown" onclick="toggleBuffs()">Hide Buffs ⇓</button>
-      <div id="buffs_div" class="buffs" align="left">
-        <br>
-        <button class="js_dropdown" onclick="togglePetConfigs()">Hide Pet Configuration ⇑</button>
-        <div id="pet_config_toggle">
-          <input type="checkbox" id="crochet_tiger_buff" class="refresher">Crochet Tiger Plushie</input>
-          <br>
-        </div>
-        <br>
-        <button class="js_dropdown" onclick="toggleExtraModifiers()">Hide Extra Modifiers ⇑</button>
-        <div id="extra_modifiers">
-          <input type="checkbox" id="god_pot_buff" class="refresher">God Potion</input>
-          <input type="checkbox" id="pigman_sword_buff" class="refresher">Pigman Sword</input>
-          <input type="checkbox" id="jasper_scroll_buff" class="refresher">Jasper Power Scroll</input>
-          <input type="checkbox" id="amethyst_scroll_buff">Amethyst Power Scroll</input>
-        </div>
-
-      </div>
       <div class="armor" align="left">
         <br>
         <br>
@@ -213,7 +141,73 @@
     </div>
     <div id="pre_insert">
     </div>
+    <div class="base_stats" align="left">
+      <button class="js_dropdown" onclick="toggleBuffs()">Hide Buffs ⇓</button>
+      <div id="buffs_div" class="buffs" align="left">
+        <br>
+        <button class="js_dropdown" onclick="togglePetConfigs()">Hide Pet Configuration ⇑</button>
+        <div id="pet_config_toggle">
+          <input type="checkbox" id="crochet_tiger_buff" class="refresher">Crochet Tiger Plushie</input>
+          <br>
+        </div>
+        <br>
+        <button class="js_dropdown" onclick="toggleExtraModifiers()">Hide Extra Modifiers ⇑</button>
+        <div id="extra_modifiers">
+          <input type="checkbox" id="god_pot_buff" class="refresher">God Potion</input>
+          <input type="checkbox" id="pigman_sword_buff" class="refresher">Pigman Sword</input>
+          <input type="checkbox" id="jasper_scroll_buff" class="refresher">Jasper Power Scroll</input>
+          <input type="checkbox" id="amethyst_scroll_buff">Amethyst Power Scroll</input>
+        </div>
+
+      </div>
+      <button id="levels_button" class="js_dropdown" onclick="toggleLevels()">Hide Levels ⇑</button>
+      <div id="levels_toggle">
+        <br>
+        SkyBlock XP (e.g 23510)
+        <input type="text" id="sbxp" class="refresher"></input>
+        Skill Average
+        <input type="text" id="skavg" class="refresher"></input>
+        Combat Level
+        <input type="text" id="combatlv" class="refresher"></input>
+      </div>
+
+      <br>
+      <br>
+      <button class="js_dropdown" onclick="toggleTalismans()">Hide Talismans ⇑</button>
+      <div id="talismans_toggle">
+        <br>
+        Magical Power
+        <input type="text" id="magical_power" class="refresher"></input>
+        Talisman Powers
+        <datalist id="powers">
+          <option value="None">None</option>
+          <option value="Silky">Silky</option>
+          <option value="Scorching">Scorching</option>
+          <option value="Slender">Slender</option>
+          <option value="Strong">Strong</option>
+          <option value="Bizarre">Bizarre</option>
+          <option value="Demonic">Demonic</option>
+          <option value="Hurtful">Hurtful</option>
+          <option value="Pleasant">Pleasant</option>
+          <option value="Adept">Adept</option>
+          <option value="Bloody">Bloody</option>
+          <option value="Forceful">Forceful</option>
+          <option value="Itchy">Itchy</option>
+          <option value="Mythical">Mythical</option>
+          <option value="Shaded">Shaded</option>
+          <option value="Sighted">Sighted</option>
+          <option value="Silky">Silky</option>
+          <option value="Sweet">Sweet</option>
+        </datalist>
+        <input list="powers" id="talisman_power" class="refresher" list="powers" type="text">
+        <br>
+        <b>WIP</b> Stat to Invest Tuning Points In:
+        <input id="tuning_points" class="refreshers" type="text">
+        </select>
+      </div>
+    </div>
   </div>
+  
   <br>
   <br>
   <button id="copylink" class="refresher">Click to copy link!</button>
