@@ -8,11 +8,17 @@ html, body {
   width: 100%;
 }
 
-
+.boxed-div {
+  outline-style: solid;
+  outline-color: #ffffff;
+  background-color: rgb(0, 0, 0, 0.2);
+  outline-width: 1px;
+  max-width: 500px;
+}
 
 body {
   font-family: c-font-basic;
-  background-image: url('img/new-background.png');
+  background-image: url('img/background-3.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -22,16 +28,19 @@ body {
   margin: 1rem;
   padding: 2rem 2rem;
   text-align: left;
+  flex: 1;
+  flex-direction: row;
 }
 
 .gear_container {
   display: inline-block;
+  max-width: 750px;
   padding: 1rem 1rem;
 }
 
 .base_stats {
   display: inline-block;
-  align: left;
+  align-items: left;
 }
 
 .js_dropdown {
@@ -43,7 +52,8 @@ body {
 
 .stats_container {
   display: inline-block;
-  align: right;
+  align-items: right;
+  text-align: left;
 }
 
 input[type=text] {
