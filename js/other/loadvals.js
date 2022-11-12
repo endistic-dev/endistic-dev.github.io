@@ -87,7 +87,7 @@ function copy_build(setting) {
     try {
       window.history.replaceState(null, document.title, "https://endistic-dev.github.io/?v=4&b=" + encoded)
     } catch (error) {
-
+      console.log("Failed to replace window state:" +  error);
     }
 
   }
