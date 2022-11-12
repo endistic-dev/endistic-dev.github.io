@@ -79,13 +79,13 @@ function copy_build(setting) {
   let text = list.join("|")
   let encoded = btoa(text)
   if (setting.includes("copy")) {
-    copyToClipboard("https://skybuilder.endistic.repl.co/?v=4&b=" + encoded);
+    copyToClipboard("https://endistic-dev.github.io/?v=4&b=" + encoded);
 
     // Alert the copied text
     alert("Copied build link!");
   } else {
     try {
-      window.history.replaceState(null, document.title, "https://skybuilder.endistic.repl.co/?v=4&b=" + encoded)
+      window.history.replaceState(null, document.title, "https://endistic-dev.github.io/?v=4&b=" + encoded)
     } catch (error) {
 
     }
