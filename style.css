@@ -1,0 +1,22 @@
+body {
+    background-image: url('img/background-2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dir-buttons {
+    border: #ffffff;
+    border-style: solid;
+    text-align: center;
+    padding: 10px 200px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}

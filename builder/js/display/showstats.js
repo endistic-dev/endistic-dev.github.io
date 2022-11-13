@@ -49,12 +49,18 @@ function getStatsText(stats, weapon) {
     </div>
     <br>
     <div id="melee-stats" class="stat-boxed-div">
-      <b>Melee Stats</b>
+      <b>Major Stats</b>
       <br>
       <br>Damage: ${Math.round(stats["DAMAGE"])}
       <br>Strength: ${Math.round(stats["STRENGTH"])}
-      <br>Critical Damage: ${Math.round(stats["CRITICAL_DAMAGE"])}
-      <br>Critical Chance: ${Math.round(stats["CRITICAL_CHANCE"])}
+      <br>Critical Damage: ${Math.round(stats["CRITICAL_DAMAGE"])}%
+      <br>Critical Chance: ${Math.round(stats["CRITICAL_CHANCE"])}%
+      <br>Attack Speed: ${Math.round(stats["ATTACK_SPEED"])}%
+    </div>
+    <br>
+    <div id="misc-stats" class="stat-boxed-div">
+      <br>Intelligence: ${Math.round(stats["INTELLIGENCE"]) + 100}
+      <br>Speed: ${Math.round(stats["WALK_SPEED"])}
     </div>
     <br>
   `
