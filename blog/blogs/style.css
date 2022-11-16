@@ -9,26 +9,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    
-    align-items: center;
 }
 
-.dir-buttons {
+.blog {
+    border-radius: 10px;
     border: #ffffff;
+    border-width: 1px;
     border-style: solid;
-    text-align: center;
-    padding: 10px;
+    padding: 10px 100px;
     color: #ffffff;
     text-decoration: none;
-    font-size: 30px;
-    border-radius: 10px;
-    background: rgb(20, 20, 20, 0.3);
-    width: 30%;
-    height: auto;
-}
-
-.icon {
-    height: 50px;
-    width: 50px;
+    text-align: left;
+    font-size: 20px;
 }

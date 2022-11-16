@@ -59,6 +59,8 @@ function getStatsText(stats, weapon) {
     </div>
     <br>
     <div id="misc-stats" class="stat-boxed-div">
+      <b>Other Stats</b>
+      <br>
       <br>Intelligence: ${Math.round(stats["INTELLIGENCE"]) + 100}
       <br>Speed: ${Math.round(stats["WALK_SPEED"])}
     </div>
