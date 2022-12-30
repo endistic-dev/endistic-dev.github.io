@@ -10,8 +10,21 @@ document.querySelectorAll('.refresher').forEach(item => {
 
 // edit for commit testing
 // convert an item name to an ID (unused)
+
+let pub_response;
+function storeResponse() {
+  url = 'https://api.hypixel.net/resources/skyblock/items'
+  fetch(url).then(response =>
+    response.json().then(data => ({
+      data: data,
+      status: response.status
+    })
+    ).then(res => {
+      pub_response = res;
+    }));
+}
 function nameToID(name) {
-  url = 'skyitems.json'
+  url = 'https://api.hypixel.net/resources/skyblock/items'
   fetch(url).then(response =>
     response.json().then(data => ({
       data: data,
